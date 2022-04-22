@@ -1,0 +1,75 @@
+.hero-cta .hero-cta-buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 15px;
+  padding: 0px;
+  width: 20vw;
+  position: absolute;
+  z-index: 10;
+  left: 20rem;
+  top: 40rem;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-cta .hero-cta-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 250px;
+    height: 183px;
+    left: 12vw;
+    top: 60vh;
+  }
+  .hero-cta-button-left button,
+  .hero-cta-button-right button {
+    border-radius: 0% !important;
+    margin-top: 15px;
+    width: 240px;
+    font-size: 18px !important;
+    font-weight: 600;
+  }
+}
+
+.hero-cta-button-left button > p,
+.hero-cta-button-right button > p {
+  width: 220px;
+  height: 20px;
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-cta-button-left button {
+  color: white;
+  font-weight: 700;
+
+  position: static;
+
+  left: 0px;
+
+  top: 0px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(23.1513px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 40px;
+}
+
+.hero-cta-button-right button {
+  color: white;
+  font-weight: 700;
+  position: static;
+
+  left: 220px;
+  top: 0px;
+
+  background: linear-gradient(107.21deg, #c961de 24.43%, #2954a3 68.95%);
+  box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
+  border-radius: 40px;
+}

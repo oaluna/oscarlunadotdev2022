@@ -1,0 +1,64 @@
+.about-me-header h3 {
+  position: absolute;
+  width: 461px;
+  height: 60px;
+  left: 50%;
+  top: 144px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 130%;
+  /* or 47px */
+
+  color: #ffffff;
+}
+
+.about-me-body h5 {
+  position: absolute;
+  width: 460px;
+  height: 364px;
+  left: 60%;
+  top: 191px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.09px;
+  line-height: 130%;
+  /* or 31px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-header h3 {
+    position: absolute;
+    left: 5rem;
+    top: 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .about-me-body h5 {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    bottom: 2.59%;
+    width: 12rem;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 21px */
+
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,155 @@
+/* Sidebar */
+.menu-container {
+  position: fixed;
+  z-index: 50;
+  top: 15%;
+  margin-bottom: 15%;
+  height: 100%;
+}
+@media screen and (max-width: 822px) {
+  .menu-container {
+    margin-bottom: 15%;
+    height: 100%;
+  }
+}
+
+.menu {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.06) 84%
+  );
+  backdrop-filter: blur(12px);
+  position: fixed;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 35px;
+  max-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  left: 0;
+  top: 15%;
+  bottom: 0;
+  border-radius: 0 50px 50px 0;
+  z-index: 50;
+}
+.menu:hover {
+  width: 55px;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    width: 45px;
+    height: 85vh;
+    bottom: 0%;
+    left: 0px;
+    top: 0%;
+  }
+}
+
+.menu li:hover {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  list-style: none;
+
+  transform-origin: 0px;
+
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+}
+.menu li {
+  list-style: none;
+  visibility: visible;
+  padding-top: 0;
+  opacity: 1;
+  z-index: 100;
+}
+.menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: 1.75em;
+  color: var(--bgColorMenu);
+  transform: translateX(calc(360deg / 8 * var(--i)));
+  transition: 0.5s ease-in;
+  border-radius: 50%;
+}
+.menu li:hover {
+  transform: translateX(5px);
+
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 55px;
+  height: 55px;
+  background: transparent;
+  color: #fff;
+  box-shadow: 0 0 0 6px;
+  border-radius: 50px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.indicator:hover {
+  opacity: 1;
+  left: 75px;
+  padding: 15px;
+  border: 10px solid rgb(15, 16, 63);
+
+  border-radius: 50px;
+  background: linear-gradient(107.21deg, #c961de 24.43%, #2954a3 68.95%);
+  transition: 0.5s ease-in-out;
+}
+
+.menu.active .indicator::before {
+  opacity: 0;
+  top: 0;
+  left: -30px;
+  background: transparent;
+  box-shadow: 0 0 0 6px transparent;
+}
+.menu li:nth-child(1):hover ~ .indicator {
+  opacity: 1;
+  transform: translateX(83px);
+
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.15);
+}
+.menu li:nth-child(2):hover ~ .indicator {
+  opacity: 1;
+  transform: translateX(83px);
+
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.15);
+}
+.menu li:nth-child(3):hover ~ .indicator {
+  opacity: 1;
+  transform: translateX(83px);
+
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.15);
+}
+.menu li:nth-child(4):hover ~ .indicator {
+  opacity: 1;
+  transform: translateX(83px);
+
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.15);
+}
+.menu li:nth-child(5):hover ~ .indicator {
+  opacity: 1;
+  transform: translateX(83px);
+
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.15);
+}

@@ -1,0 +1,64 @@
+.Hero-title {
+  text-align: left;
+  position: absolute;
+  width: 1000px;
+  height: 248px;
+  left: 10vw;
+  top: 300px;
+  line-height: 0.65;
+  letter-spacing: -2px;
+  z-index: 1;
+}
+
+.Hero-title-name h1 {
+  font-weight: 700;
+  font-size: 92px;
+}
+.Hero-title-role h3 {
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.Hero-title-city h3 {
+  font-weight: 700;
+  font-size: 54px;
+}
+
+@media screen and (max-width: 768px) {
+  .Hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    top: 20vh;
+    position: absolute;
+    height: 323px;
+    left: 21.03%;
+    right: 2.34%;
+  }
+  .Hero-title-name h1 {
+    position: static;
+    width: 300px;
+    height: 148px;
+
+    margin-bottom: 42px;
+    font-family: "Poppins";
+    font-style: normal;
+    letter-spacing: -1px;
+    font-size: 44px !important;
+    line-height: 1.2;
+    /* or 68px */
+
+    color: #ffffff;
+  }
+  .Hero-title-role h3,
+  .Hero-title-city h3 {
+    position: static;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0%;
+    padding: 0;
+    margin: 15px 0;
+  }
+}

@@ -1,0 +1,204 @@
+.contact-form {
+  position: absolute;
+  left: 20vw;
+
+  top: 0;
+  text-align: left;
+  background: rgba(47, 47, 138, 0.6);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  box-shadow: 0px 1.4px 4px rgba(0, 0, 0, 0.5);
+  width: 55vw;
+  z-index: 10;
+}
+
+.contact-form-container {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15% 55%;
+}
+
+.contact-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 200px;
+  margin: 0px 5vw;
+  padding: 5%;
+}
+.contact-header {
+  text-align: left;
+}
+
+.contact-form-text {
+  width: 350px;
+  height: 168px;
+  top: 53px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 143.2%;
+}
+.contact-cta-write {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  position: static;
+  width: 300px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+}
+
+.contact-cta-call {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  position: static;
+  width: 300px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+
+  /* Inside auto layout */
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 94px;
+  margin: 0px 5vw;
+  padding: 5%;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.3);
+  height: 50px;
+  width: 400px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 25px;
+  color: #fff;
+  padding: 5px;
+  z-index: 10;
+}
+
+textarea {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  border: none;
+  width: 400px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #fff;
+  padding: 5px;
+  z-index: 10;
+}
+
+.sendbutton {
+  width: 400px;
+  height: 80px;
+  left: 5vw;
+  top: 500px;
+  padding: 5% 15%;
+  color: white;
+  background: linear-gradient(105.95deg, #c961de 24.79%, #2954a3 71.87%);
+  box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
+  border-radius: 35px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 820px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 0;
+    position: static;
+    width: 220px;
+    height: 100vh;
+    left: 0;
+    background: transparent;
+    backdrop-filter: none;
+  }
+
+  .contact-form-container {
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0vw;
+    top: 15vh;
+  }
+  .contact-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .contact-form-text {
+    font-size: 14px;
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    left: 0vw;
+  }
+  .cta-write,
+  .cta-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    width: 220px;
+    height: 40px;
+  }
+  textarea {
+    width: 220px;
+  }
+  .sendbutton {
+    border-radius: 0% !important;
+    margin: 15px auto;
+    width: 220px;
+    padding: 8%;
+    font-size: 18px !important;
+    font-weight: 600;
+
+    background: linear-gradient(107.21deg, #c961de 24.43%, #2954a3 68.95%);
+    box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
+  }
+}
