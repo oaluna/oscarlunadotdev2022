@@ -7,6 +7,7 @@
   right: auto;
   z-index: 10;
 }
+
 .card-title {
   position: absolute;
   top: 0;
@@ -23,7 +24,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
+
+}
+
+.left-arrow,
+.right-arrow {
+  z-index: 20;
 }
 
 .label {
@@ -35,15 +41,16 @@
   align-items: flex-end;
   justify-content: center;
   border-radius: 0 0 15px 15px;
-  width: 605.5px;
+  width: 600px;
   height: 120px;
-  left: 28.5rem;
+  left: 32.5rem;
   top: 49vh;
   bottom: 0px;
 
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 20;
 }
+
 .label h4 {
   font-size: 32px;
 }
@@ -61,6 +68,7 @@
     left: 28vw;
     top: -150vh;
   }
+
   .arrow-container {
     display: flex;
     flex-direction: column;
@@ -70,11 +78,13 @@
     left: 66vw;
     top: -50vh;
   }
+
   .label {
     position: absolute;
     left: -92vw;
     top: 146vh;
   }
+
   .arrow-left {
     transform: rotateX(20deg) !important;
   }
